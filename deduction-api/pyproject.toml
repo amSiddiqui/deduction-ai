@@ -1,0 +1,13 @@
+[project]
+name = "deduction-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.51.0",
+    "duckdb>=1.2.2",
+    "fastapi[standard]>=0.115.12",
+    "pydantic-settings>=2.9.1",
+    "rich>=14.0.0",
+]

@@ -111,6 +111,10 @@ async def chat_completion_iter(
     logger.debug("Resolved max_tokens: %s", resolved_max_tokens)
     model_opts = _get_model_specific_options(model, settings)
     logger.debug("Model options: %s", model_opts)
+    if messages:
+        messages = [messages[0]] + messages[1:][-2:]
+    else:
+        messages = []
 
     api_params = {
         "model": model,

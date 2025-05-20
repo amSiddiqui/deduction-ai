@@ -9,7 +9,6 @@ export default defineConfig({
         allowedHosts: [
             "localhost",
             "127.0.0.1",
-            "spiritual-destroy-fishing-relation.trycloudflare.com",
         ],
         proxy: {
             // any request starting with `/api` will be forwarded to FastAPI

@@ -29,7 +29,6 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://spiritual-destroy-fishing-relation.trycloudflare.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],

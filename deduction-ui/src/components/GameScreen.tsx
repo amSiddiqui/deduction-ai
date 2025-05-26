@@ -59,6 +59,7 @@ const GameScreen: React.FC<GameScreenProps> = ({
         if (models && models.default && !selectedModel) {
             setSelectedModel(models.default);
         }
+        setChatMessages([]);
     }, [models, selectedModel]);
 
     const handleOpenSubmitDialog = () => {

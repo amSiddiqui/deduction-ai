@@ -2,7 +2,7 @@
     {
         "stage": 1,
         "prompt": "Given the cards [7, 3, 2, 1], insert arithmetic operators and parentheses to make 24.",
-        "answer": "((7 - 3) * 2) * 1"
+        "answer": "24"
     },
     {
         "stage": 2,

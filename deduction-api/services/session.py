@@ -101,7 +101,9 @@ class SessionService:
             }
 
         is_correct = answer_checker.DEFAULT_ANSWER_RULE(
-            answer, current_question_details["answer"]
+            answer,
+            current_question_details["answer"],
+            current_stage,
         )
         response_message = ""
         next_question_data = None

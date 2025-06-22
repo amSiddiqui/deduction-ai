@@ -9,6 +9,7 @@ export default defineConfig({
         allowedHosts: [
             "localhost",
             "127.0.0.1",
+            "beads-guilty-bargains-ever.trycloudflare.com",
         ],
         proxy: {
             // any request starting with `/api` will be forwarded to FastAPI

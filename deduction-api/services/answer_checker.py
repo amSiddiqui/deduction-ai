@@ -144,7 +144,7 @@ def check_answer_rule(
     user_answer = user_answer.strip()  # Basic strip before passing to specific logic
     if stage == 1:
         # replace x with * for multiplication
-        user_answer = user_answer.replace("x", "*").replace("X", "*")
+        user_answer = user_answer.replace("x", "*").replace("X", "*").replace("×", "*")
         expected_numbers_for_stage1 = {1, 2, 3, 7}
         try:
             result = _safe_eval_expr(user_answer, expected_numbers_for_stage1)
